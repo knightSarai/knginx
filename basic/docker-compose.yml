@@ -2,9 +2,8 @@ version: "3"
 
 services:
   nginx:
-    build:
-      context: .
+    image: nginx:latest
     ports:
-      - 8000:80
+      - 8080:80
     volumes:
       - ./html/:/usr/share/nginx/html/
