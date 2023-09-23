@@ -6,19 +6,16 @@ services:
     hostname: app1
     build:
       context: app
-      dockerfile: ../load-balancing/Dockerfile
   app2:
     container_name: app2
     hostname: app2
     build:
       context: app
-      dockerfile: ../load-balancing/Dockerfile
   app3:
     container_name: app3
     hostname: app3
     build:
       context: app
-      dockerfile: ../load-balancing/Dockerfile
   nginx:
     image: nginx:latest
     ports:
