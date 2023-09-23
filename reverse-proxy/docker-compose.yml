@@ -6,6 +6,11 @@ services:
     hostname: api
     build:
       context: app
+  api2:
+    container_name: api2
+    hostname: api2
+    build:
+      context: app
   main:
     container_name: main
     hostname: main
